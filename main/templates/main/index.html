@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+     <div class="features">
+          <h1>{{ title }}</h1>
+          <p>На нашем сайте предоставлен широкий выбор на все, что вас интересует</p>
+          <button class="btn btn-warning">{% filter upper %}Просто нажми{% endfilter %}</button>
+          {% for i, j in me.items %}
+               <p>{{ i|upper }}:{{ j|upper }}</p>
+          {% endfor %}
+     </div>
+{% endblock %}

@@ -1,0 +1,157 @@
+body {
+    background: whitesmoke;
+}
+
+aside {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 304px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  margin-top: 60px; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+
+
+}
+
+aside img{
+    width: 80px;
+    float: left;
+    margin-top: -15px;
+}
+
+aside .logo {
+    margin-left: 7px;
+    position: relative;
+    top: -20px;
+}
+aside h2 {
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+aside .logo a {
+    font-size: 30px;
+    font-family: cursive;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    position: bottom;
+}
+
+aside ul {list-style: none;}
+
+aside ul li{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  margin-top: 15px;
+}
+
+aside ul li i{
+    padding: 4px;
+    color: whitesmoke;
+    float: relative;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+main .features {
+    float: center;
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {font-size: 40px; margin-left: 50px; padding-left: 45%; }
+main .features p {max-width: 400px; margin: 20px auto; text-align: left; }
+
+.features_details p {
+  margin-left: 540px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  color: black;
+  max-width: 700px;
+  text-align: left;
+  position: center;
+}
+
+.features_details h1 {
+  margin-left: 540px; /* Same width as the sidebar + left position in px */
+  font-size: 38px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  color: black;
+  max-width: 900px;
+  text-align: center;
+  position: center;
+  font-weight: bold;
+}
+
+.features_details a {
+  margin-left: 540px; /* Same width as the sidebar + left position in px */
+  font-size: 25px; /* Increased text to enable scrolling */
+  color: white;
+  max-width: 500px;
+  font-weight: bold;
+}
+
+.alert-warning {
+    float: right;
+    clear: both;
+    width: 450px;
+    margin: 15px auto;
+    text-align: left;
+    background-color: #818181;
+    color: f1f1f1;
+}
+
+.alert-warning:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 675px;
+    position: center;
+}
+
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: #555; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active {
+  background-color: #4CAF50; /* Add an active/current color */
+}
+
+
+
+

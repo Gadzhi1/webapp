@@ -1,0 +1,42 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'main/js/jss.js' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <aside>
+        <img src = "{% static 'main/img/логотип.jpg' %}" alt = 'Лого'>
+        <span class = "logo"><a href="{% url 'home' %}">chirag</a></span>
+        <h2>NEWS</h2>
+        <ul>
+                <a href="{% url 'home' %}"><li><i class="fas fa-home"></i>Главная</li></a>
+                <a href="{% url 'about' %}"><li><i class="fas fa-users-cog"></i>Про нас</li></a>
+                <a href="{% url 'news_home' %}"><li><i class="far fa-newspaper"></i>Новости</li></a>
+                <a href="https://vk.com/gadmn"><li><i class="fab fa-telegram-plane"></i>Контакты</li></a>
+                <a href="{% url 'create' %}"><li><button class="btn btn-success"><i class="fas fa-plus-circle"></i> Добавить запись</button></li></a>
+        </ul>
+    </aside>
+    <div class="icon-bar">
+      <a class="active" href="https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp"><i class="fa fa-home"></i></a>
+      <a href="https://www.google.ru/"><i class="fa fa-search"></i></a>
+      <a href="#"><i class="fa fa-envelope"></i></a>
+      <a href="https://www.google.ru/maps/@43.0874008,44.6085302,7z?hl=ru"><i class="fa fa-globe"></i></a>
+      <a href="#"><i class="fa fa-trash"></i></a>
+    </div>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
